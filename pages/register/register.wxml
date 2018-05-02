@@ -1,0 +1,17 @@
+<view class="container">  
+	  <view class="usermotto">  
+	    姓名：  
+	    <input type="text" bindinput="userNameInput"/>  
+	    公司：  
+	    <input type="text" bindinput="userPasswordInput" />  
+      手机：  
+	    <input type="text" bindinput="userPhonedInput" /> 
+       职务：  
+	    <input type="text" bindinput="userTitleInput"/>
+       邮箱：  
+	    <input type="text" bindinput="userEmailInput"/>   
+       地址：  
+	    <input type="text" bindinput="userAddressInput"/> 
+	    <button bindtap="logIn">提交</button>  
+  </view>  
+</view>  

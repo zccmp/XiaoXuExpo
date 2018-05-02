@@ -1,0 +1,46 @@
+<view class="page">                     
+    <view class="pet_name">
+        <text>晓序简介</text>
+        <view>
+          {{name}}
+        </view>
+    </view>   
+     <view class="pet_name">
+        <text>晓序口号</text>
+        <view>
+          {{tip}}
+        </view>
+    </view>   
+     <view class="pet_name">
+        <text>业务服务</text>
+        <view>
+          联系人：某某某
+        </view>
+        <view>
+          联系电话：1368888888
+        </view>
+         <view>
+          QQ：5656767676
+        </view>
+         <view>
+          Email：5656767676@qq.com
+        </view>
+    </view>   
+     <view class="pet_name">
+        <text>技术服务</text>
+        <view>
+          联系人：某某某
+        </view>
+         <view>
+          联系电话：1368888888
+        </view>
+         <view>
+          QQ：5656767676
+        </view>
+          <view>
+          Email：5656767676@163.com
+        </view>
+    </view>   
+</view>
+
+

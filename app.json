@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/expoList/expoList",
+    "pages/exhiList/exhiList",
+    "pages/contact/contact",
+    "pages/register/register",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#ff8b5f",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "当前展会",
+        "iconPath": "style/image/icon_home.png",
+        "selectedIconPath": "style/image/icon_home_selected.png"
+      },{
+        "pagePath":"pages/expoList/expoList",
+        "text":"全部展会",
+        "iconPath":"style/image/icon_cate.png",
+        "selectedIconPath":"style/image/icon_cate_selected.png"
+      },{
+        "pagePath": "pages/exhiList/exhiList",
+        "text": "展会服务",
+        "iconPath": "style/image/icon_search.png",
+        "selectedIconPath": "style/image/icon_search_selected.png"
+      }
+      ,
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "style/image/icon_home.png",
+        "selectedIconPath": "style/image/icon_home_selected.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "晓序,欢迎您!",
+    "navigationBarTextStyle":"black"
+  }
+}

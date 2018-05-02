@@ -1,0 +1,31 @@
+<view class="page">
+    <!-- 循环加载当前数据区域-->
+     <block wx:for="{{deptMyList}}" wx:for-item="item" wx:key="">
+        <view class="item_group" data-petid="{{item.tId}}" bindtap="navToPetDet">                 
+          <view class="pet_card_item">
+            <view class="pet_name_section">
+              <view class="pet_name">
+                <text>公司名称：{{item.deptName}}</text>
+              </view>
+               <view class="pet_breed">
+                <text>联系人:{{item.deptUser}}</text>
+              </view>
+              <view class="pet_breed">
+                <text>联系电话:{{item.deptTel}}</text>
+              </view>
+               <view class="pet_breed">
+                <text>联系邮箱:{{item.deptMail}}</text>
+              </view>
+               <view class="pet_breed">
+                <text>公司官网:{{item.deptWeb}}</text>
+              </view>
+              <view class="pet_breed">
+                <text>公司地址:{{item.deptAddress}}</text>
+              </view>
+            </view>
+                               
+          </view>
+        </view>
+      </block>
+</view>
+

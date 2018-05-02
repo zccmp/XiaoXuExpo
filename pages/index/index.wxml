@@ -1,0 +1,46 @@
+<view class="page">
+    <view class="">
+      <view>
+        <text class="p_text">当前城市：{{city}}</text>
+      </view>
+    </view>
+    <!-- 图片轮播区域  -->
+    <view>
+           <swiper indicator-dots="{{indicatorDots}}"  
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+          <block wx:for="{{imgUrls}}">  
+            <swiper-item>  
+               <navigator url="" hover-class="navigator-hover">  
+                <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+               </navigator>   
+            </swiper-item>  
+          </block>  
+    </swiper>  
+    </view>
+    <!-- 循环加载当前数据区域-->
+     <block wx:for="{{feedMyList}}" wx:for-item="item" wx:key="">
+        <view class="item_group" data-petid="{{item.exhiId}}" bindtap="navToPetDet">                 
+          <view class="pet_card_item">
+            <view class="pet_name_section">
+              <view class="pet_name">
+                <text>展会名称：{{item.exhiName}}</text>
+              </view>
+              <view class="pet_breed">
+                <text>展会日期:{{item.startDate}}-{{item.endDate}}</text>
+              </view>
+               <view class="pet_breed">
+                <text>展会地址:{{item.exhiAddress}}</text>
+              </view>
+              <view class="pet_breed">
+                <text>主办单位:{{item.exhiDept1}}</text>
+              </view>
+               <view class="pet_breed">
+                <text>联系方式:{{item.exhiDeptTel1}}</text>
+              </view>
+            </view>
+                               
+          </view>
+        </view>
+      </block>
+</view>
+
